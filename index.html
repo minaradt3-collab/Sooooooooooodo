@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>My World</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Nunito:wght@400;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="sky" aria-hidden="true"></div>
+<div id="lock">
+  <div>
+    <h1>For You <span class="heart" aria-hidden="true">♥</span></h1>
+    <p>Enter the secret word to open.</p>
+    <input id="pw" type="password" placeholder="Password" autocomplete="off" aria-label="Password">
+    <div><button id="go" type="button">Open</button></div>
+    <p class="err" id="err" role="alert"></p>
+  </div>
+</div>
+<div class="wrap" id="site" hidden>
+  <header>
+    <h1><span class="glow" contenteditable="true" spellcheck="false">My Love</span> <span class="heart" aria-hidden="true">♥</span></h1>
+  
+  </header>
+
+  <main>
+    <h2>Our Moments</h2>
+    <p class="hint">Tap any frame to add a photo.</p>
+    <div class="grid" id="grid"></div>
+
+    <h2>A Few Words From My Heart</h2>
+    <div class="letter" contenteditable="true" spellcheck="false">
+      <p>You are the best thing that ever happened to me.</p>
+      <p>Every day with you is better than the one before, and every picture here holds a moment I will never forget.</p>
+      <p>Thank you for being by my side.</p>
+      <p class="sig">I love you ♥</p>
+    </div>
+  </main>
+
+
+</div>
+
+<!-- Put your song in the same folder and write its file name in src -->
+<audio id="song" src="ssstik.io_1792848438939.mp3" loop preload="auto"></audio>
+<button id="music" type="button" aria-label="Music on or off" hidden>♪</button>
+<script src="script.js"></script>
+</body>
+</html>
